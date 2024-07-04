@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+      }
+      .left {
+        float: left;
+        margin-left: 10px;
+      }
+      header img {
+        vertical-align: middle;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+      }
+      .hamburger{
+        display: none;
+      }
+      .right {
+        position: relative;
+        left: 50%;
+      }
+      a {
+        width: fit-content;
+        position: relative;
+        top: 20px;
+        margin: 30px;
+        text-decoration: none;
+        color: black;
+      }
+      .h4 {
+        margin-left: 10px;
+      }
+      .blue {
+        height: 500px;
+
+        background-color: rgb(57, 97, 215);
+        color: white;
+        text-align: center;
+        padding: 100px;
+        font-size: x-large;
+      }
+      button {
+        height: 30px;
+        width: 120px;
+        color: black;
+        border-radius: 5px;
+        margin-right: 50px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      tr th {
+        border: 1px solid white;
+      }
+      .left1 {
+        top: 125px;
+        right: 100px;
+        position: relative;
+      }
+      .left1 img {
+        height: 40px;
+        width: 40px;
+      }
+      .right1 {
+        bottom: 140px;
+        position: relative;
+      }
+      .aboutme {
+        text-align: center;
+        font-size: larger;
+        margin-top: 100px;
+      
+        height: 600px;
+       width: 1500px;
+      }
+      .get{
+        margin:30px ;
+
+      }
+      .left2 {
+        text-align: left;
+      }
+      .para1 {
+        text-align: left;
+       
+      }
+     
+      
+      .cantant{
+        background-color: rgb(15, 156, 238);
+        height: 30px;
+        width: 100px;
+        color: white;
+      }
+      .left2{
+        float: left;
+        height: 400px;
+        width: 400px;
+        margin-left: 120px;
+      }
+      .right2{
+        float: right;
+        width: 600px;
+        text-align: left;
+        margin-right: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;bottom:20px;
+       
+        
+      }
+      .right2 button{
+        margin: 4px;
+        height: 50px;
+      }
+.head{
+  text-align: center;
+  font-size: large;
+}
+    .right3{
+      display: flex;
+      flex-direction: column;
+      
+      position: relative;top: 100px;
+      text-align: left;
+      font-size: larger;
+      height: 300px;
+      width: 600px;
+      margin-left: 100px;
+
+    }
+    .left3 img{
+    
+      height: 400px;
+      width: 600px;
+      margin-left:  100px;
+      position: relative;top:60px
+    }
+    .p1{
+      display: flex;  
+    }
+    .casestudy{
+      background-color:rgb(15, 156, 238) ;
+      color: white;
+      height: 50px;
+      width: 120px;
+    }
+    .content1{
+      background-color:rgb(57, 97, 215) ;
+      height: 1100px;
+      width: 100%;
+      text-align: center;
+      font-size: larger;
+      color: white;
+    }
+    .form{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      height: 700px;
+      width: 60%;
+      border-radius: 1%;
+      margin-left: 300px;
+      position: relative;top: 50px;
+      color: grey;
+    }
+.form1{ 
+  
+  margin: 10px;
+  border-radius: 1;
+  border: 1px solid rgb(243, 236, 236);
+  width:850px;
+  height: 40px;
+}
+.form1 input{
+
+  
+  height: 100%;
+  width: 100%;
+  background-color: rgb(243, 236, 236);
+
+}
+ 
+h3{
+  margin-left: 20px;
+  text-align: left;
+  position: relative;top: 30px;
+}
+.mform1{
+  border-radius: 5px;
+  height: 200px;
+  width: 850px;
+  
+}
+.button1{
+  height: 50px;
+  width: 150px;
+  color: white;
+  background-color:rgb(15, 156, 238)  ;
+  font-size: x-large;
+  position: relative;left: 700px;
+  margin-top: 40px;
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 400px;
+  width: 100%;
+  border: 1px solid white;
+}
+
+
+.left4{
+  float: left;
+  position: relative;left: 200px;
+  font-size: larger;
+  width: 400px;
+  margin-top: 50px;
+}
+.right4{
+  float: right;
+  position: relative;right: 200px;
+  margin-top: 50px;
+}
+.right4 img{
+  height: 40px;
+  width: 40px;
+}
+@media only screen and (max-width:720px){
+  body{
+    overflow-x:hidden;
+    background-color: aliceblue;
+  }
+  header{
+    width: 100%;
+  }
+  .hamburger{
+    background-color: aqua;
+    
+    display: block;
+  }
+  .right{
+    display:none;
+  }
+  .left1{
+    display: none;
+  }
+  .right1{
+    width: 100%;
+    height:fit-content;
+    position: relative;
+    top: 70px;
+  }
+  .right1 h1{
+    margin: 0;
+    padding: 0;
+    font-size: larger; 
+  }
+  .right1 button{
+    position: relative;
+    left: 30px;
+  }
+  .blue{
+    font-size: large;
+    margin-top:10px;
+    padding:0;  
+    height: 400px;
+  }
+  .aboutme{
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    font-size: large;
+  }
+  .left2{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    right: 110px;
+    font-size: large; 
+  }
+  .right2{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    left: 110px;
+    font-size: large;
+    position: relative;
+    top: 30px;
+    margin-top: 50px;
+  }
+  .name button{
+    height: 40px;
+   position: relative;
+   bottom: 100px;
+   font-size: small;
+  }
+  .head{
+    position: relative;
+    bottom: 50px;
+    font-size: large;
+  }
+  
+  .left3{
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    position: relative;right: 120px;
+    position: relative;
+    
+  }
+  .left3 img{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    left: 5px;
+  }
+  .right3{
+    text-align: center;
+   margin-top: 200px;
+   position: relative;
+   right: 100px;
+   font-size: large;
+  }
+  .casestudy{
+    position: relative;
+    left: 25px;
+    height: 50px;
+    font-size: small;
+  }
+  .content1{
+    position: relative;
+    top: 100px;
+    font-size: larger;
+    height: 950px;
+  }
+  .form{
+    position: relative;
+    right: 290px;
+    height: 500px;
+    width: 250px;
+  }
+  .form1{
+    height: 100px;
+    width: 210px;
+    border-radius: 1%;
+  }
+  .button1{
+   position: relative;top: 60px;
+   position: relative;left: 150px;
+   height: 50px;
+   width: 80px;
+   font-size: smaller;
+  }
+  .footer{
+    position: relative;
+    top: 100px;
+    position: relative;
+    right: 190px;
+    font-size: smaller;
+    height: 10px;
+  } 
+   .left4 p{
+    width: 250px;
+    font-size: smaller;
+   } 
+  .right4{
+    position: relative;
+    left: 50px;
+    position: relative;
+    bottom: 50px;
+    font-size: smaller;
+  }
+  .right4 img{
+    height: 30px;
+    width: 20px;  }
+}
+
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img
+          src="https://dopefolio.netlify.app/assets/png/john-doe.png"
+          alt="?image not found"
+        />
+      </div>
+     
+      <div class="h4"><h4>JOHN DEO</h4></div>
+      <div class="hamburger">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADPz89LS0uWlpb39/eCgoKQkJCxsbH29vZiYmI4ODh0dHTX19empqbFxcXr6+sQEBDh4eEbGxu7u7s0NDR6enpXV1egoKDJyclvb28ODg6IiIhcXFwfHx8ZGRnwNjATAAACZUlEQVR4nO3dCW7CMBCFYRdIw75vbSm9/y2rqKgUVRo72NJoxv93gveUkGBj7BAAAAAAAAAAAAAAAAAAoAKrdjq0Y9qu+tVbH1/sOa7TC7baYZ/UJvZrZtpJnzZrkgputHNm2KRUPGinzHKIF3zVzpjpNVZwq50w2zbScKodMNtULjjRzlfARGw41o5XwFhsONeOV8BcbGj3ZX83Extqpyui8oY77XQFXMWGJ+14BZzEhlbHTX/JY6iBdrwCFmJDD48auWBYaufLtow0NP803cUKhoV2xEyRT6H9+zR6j3bO2ikznFMKhrDSzvm05GnhxuYgap40l3izHlmbcpuNekx53y7kdmDHts/lAwAAAAAAAAAAxjRvy5Edy7e+P1zsh9q/JfU23PfoN7hqx33KdZBa0O5i9ugy9h+f2jkzfKYUfNdOmeU9XtD6Sm95lXfwsFhfXqofwkU7YLZLpKF2vgLkgnYXC93Jy4bsvgrv5JeivS9r/w3Fhh/a8QrYiA210xVR+TX0/zn0/yz1/z708KiRC1bwvdT+2CI6JeV+fFjBGL+CeRrLT5vEubYK5kuD/znvjvffLQAAAAAAAAAAgCHO94myt9fXoddeXxOj+7XFFkD/srtsKHHPPff7Jrrf+9L//qVf2hEzRfegtX2PdmL3qXa+AuSC/vfz9r8nu/999a3v5t2Rn6ba6YqovKH/c2ZsDpseyWcFWV/l3ZFXettfqh/9I7D7c9cqODvP/H+7EhazW5tke5RwhmVoLI+Bk84h9X+WbLA7hko9DzhUcKZzx/m53AAAAAAAAAAAAAAAAABg0zfn21Nf0tdOJAAAAABJRU5ErkJggg==" alt="">
+      </div>
+      <div class="right">
+        <nav>
+          <a href="#"><b>HOME</b></a>
+          <a href="#"><b>PROJECT</b></a>
+          <a href="#"><b>CONTACT</b></a>
+          <a href="#"><b>ABOUT</b></a>
+        </nav>
+      </div>
+    </header>
+    <div class="blue">
+      <div class="left1">
+        <table>
+          <tr>
+            <th>
+              <img src="//dopefolio.netlify.app/assets/png/linkedin-ico.png" />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="https://dopefolio.netlify.app/assets/png/github-ico.png"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="https://dopefolio.netlify.app/assets/png/twitter-ico.png"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img src="https://dopefolio.netlify.app/assets/png/yt-ico.png" />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                src="https://dopefolio.netlify.app/assets/png/insta-ico.png"
+              />
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div class="right1">
+    
+        <h1>HEY, MY NAME IS JOHN DOE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          deleniti fugit et sed repellendus, asperiores<br />
+          dolor explicabo iure corrupti eligendi magni facere architecto quod
+          provident. Vitae numquam illum cumque delectus.
+        </p>
+        <button>PROJECTS</button>
+      </div>
+    </div>
+    <div class="aboutme">
+      <h1>ABOUT ME</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora<br> explicabo quae quod deserunt eius sapiente
+      </p>
+      <div class="left2">
+        <h2 class="get">Get to know me!</h2>
+        <p class="para1">
+          Hey! It's John Doe and I'm a Frontend Web Developer located in Los
+          Angeles. I've done remote projects for agencies, consulted for
+          startups, and collaborated with talented people to create digital
+          products for both business and consumer use.<br><br> I'm a bit of a digital
+          product junky. Over the years, I've used hundreds of web and mobile
+          apps in different industries and verticals. Feel free to contact me
+          here.
+          <div><button class="cantant">CONTANT</button></div>
+        </p>
+        
+      </div>
+      <br>
+      <div class="right2">
+        <h1>My Skills</h1>
+        <div class="name button">
+        <button type="name" >HTML</button>
+        <button type="name" >CSS</button>
+        <button type="name" >JavaScript</button>
+        <button type="name" >React</button>
+        <button type="name" >SASS</button>
+        <button type="name" >GIT</button>
+        <button type="name" >Shopify</button>
+        <button type="name" >Wordpress</button>
+        <button type="name" >Google ADS</button>
+        <button type="name" >Facebook ADS</button>
+        <button type="name" >Andriod</button>
+        <button type="name" >IOS</button>
+      </div>
+      </div>
+    </div>
+    <div class="head"> <h1 class="projecta">Project</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente</p></div>
+    <div class="project">
+     <div class="p1">
+      <div class="left3">
+        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg">
+      </div>
+      <div class="right3">
+        <h2>Project1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.</p>
+<button class="casestudy">CASE STUDY</button>
+      </div>
+    </div>
+    </div><br><br><br><br>
+    <div class="project">
+     <div class="p1">
+      <div class="left3">
+        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg">
+      </div>
+      <div class="right3">
+        <h2>Project2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.</p>
+<button class="casestudy">CASE STUDY</button>
+      </div>
+    </div><br><br><br><br>
+    <div class="project">
+     <div class="p1">
+      <div class="left3">
+        <img src="https://dopefolio.netlify.app/assets/jpeg/project-mockup-example.jpeg">
+      </div>
+      <div class="right3">
+        <h2>Project3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.</p>
+<button class="casestudy">CASE STUDY</button>
+      </div>
+    </div><br><br><br><br>
+    <div class="content1"><br><br>
+      <h1> CONTENT</h1>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod<br> deserunt eius sapiente</P>
+      <div class="form">
+        <h3>Name</h3>
+       <div class="form1">
+      
+        <input class="form1" type="name" placeholder="Enter Your Name" style="border: none;">
+       </div>
+       <h3>Email</h3 >
+       <div class="form1">
+        
+          <input class="form1" type="email" placeholder="Enter Your Email ">
+       </div>
+       <h3>Message</h3>
+       <div class="mform1 form1">
+       
+        <input class="mform1 form1" type="message" placeholder="Message">
+       </div>
+       <button class="button1">
+        Submit
+       </button>
+    </div>
+    </div>
+    <footer>
+   <div class="footer">
+      <div class="left4">
+      <h2>John Doe</h2>
+      <p>lorem ipsum dolor sit amet consectetur adipisicing elit facilis tempora explicabo quae quod deserunt</p>
+    </div>
+      <div class="right4">
+        <h2>Social</h2>
+        <div class="socialimg">
+        <img src="https://dopefolio.netlify.app/assets/png/linkedin-ico.png" alt="image">  
+        <img src="https://dopefolio.netlify.app/assets/png/github-ico.png" alt="image">  
+        <img src="https://dopefolio.netlify.app/assets/png/twitter-ico.png" alt="image">  
+        <img src="https://dopefolio.netlify.app/assets/png/yt-ico.png" alt="image">
+        <img src="https://dopefolio.netlify.app/assets/png/insta-ico.png" alt="image">        
+        </div>
+      </div>
+      <div class="footer2"></div>
+    </div>
+  
+  </footer>
+  </body>
+</html>
